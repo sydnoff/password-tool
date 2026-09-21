@@ -11,7 +11,7 @@ import secrets
 import string
 
 # Мінімальна допустима довжина пароля (використовується у check_password_strength)
-MIN_LENGTH = 8
+MIN_LENGTH = 12
 
 
 def generate_salt(length: int = 16) -> str:
