@@ -1,14 +1,5 @@
-"""
-main.py — головний модуль (точка входу) лабораторної роботи № 1.
-
-Демонструє механізм імпортування модулів у Python: функції оголошені
-у файлі lib.py, а викликаються тут.
-"""
-
-# Імпорт конкретних функцій з локального модуля lib.py
 from lib import generate_salt, hash_password, check_password_strength, verify_password
 
-# Набір тестових паролів для демонстрації роботи модуля
 TEST_PASSWORDS = ["qwerty", "Password1", "L!v1v2026#Poly"]
 
 
@@ -48,6 +39,7 @@ def demo_hashing() -> None:
     print(f"Перевірка хибного пароля:     {verify_password('wrong', salt, stored_hash)}")
     print()
 
+print ("hey")
 
 def main() -> None:
     """
